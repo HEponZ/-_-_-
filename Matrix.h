@@ -56,6 +56,63 @@ public:
 		return my_cout;
 	}
 
+	friend const Matrix operator+(const Matrix<T>& matrix1, const Matrix<T>& matrix2)
+	{
+		Matrix<int> matrix_res;
+
+		for (int i{ 0 }; i < matrix1.row; i++)
+		{
+			for (int j{ 0 }; j < matrix1.col; j++)
+			{
+				matrix_res.matrix[i][j] = matrix1.matrix[i][j] + matrix2.matrix[i][j];
+			}
+		}
+
+		return matrix_res;
+	}
+	friend const Matrix operator-(const Matrix<T>& matrix1, const Matrix<T>& matrix2)
+	{
+		Matrix<int> matrix_res;
+
+		for (int i{ 0 }; i < matrix1.row; i++)
+		{
+			for (int j{ 0 }; j < matrix1.col; j++)
+			{
+				matrix_res.matrix[i][j] = matrix1.matrix[i][j] - matrix2.matrix[i][j];
+			}
+		}
+
+		return matrix_res;
+	}
+	friend const Matrix operator*(const Matrix<T>& matrix1, const Matrix<T>& matrix2)
+	{
+		Matrix<int> matrix_res;
+
+		for (int i{ 0 }; i < matrix1.row; i++)
+		{
+			for (int j{ 0 }; j < matrix1.col; j++)
+			{
+				matrix_res.matrix[i][j] = matrix1.matrix[i][j] * matrix2.matrix[i][j];
+			}
+		}
+
+		return matrix_res;
+	}
+	friend const Matrix operator/(const Matrix<T>& matrix1, const Matrix<T>& matrix2)
+	{
+		Matrix<int> matrix_res;
+
+		for (int i{ 0 }; i < matrix1.row; i++)
+		{
+			for (int j{ 0 }; j < matrix1.col; j++)
+			{
+				matrix_res.matrix[i][j] = matrix1.matrix[i][j] / matrix2.matrix[i][j];
+			}
+		}
+
+		return matrix_res;
+	}
+
 	~Matrix()
 	{
 		for (int i{ 0 }; i < row; i++)

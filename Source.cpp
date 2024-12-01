@@ -12,12 +12,15 @@ int main()
 
 	cout << "Введите матрицу 1\n";
 	cin >> matrix;
-	cout << "Матрица 1\n";
-	cout << matrix;
+	cout << "Матрица 1\n" << matrix;
 
 	matrix2.rand_matrix();
-	cout << "Матрица 1\n";
-	cout << matrix2;
+	cout << "Матрица 1\n" << matrix2;
+	
+	cout << "Сумма матриц\n" << matrix + matrix2;
+	cout << "Разница матриц\n" << matrix - matrix2;
+	cout << "Произведение матриц\n" << matrix * matrix2;
+	cout << "Частное матриц\n" << matrix / matrix2;
 
 	return 0;
 }
