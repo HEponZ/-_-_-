@@ -23,7 +23,7 @@ public:
 		{
 			for (int j{ 0 }; j < col; j++)
 			{
-				matrix[i][j] = rand() % 10;
+				matrix[i][j] = rand() % 9 + 1;
 			}
 		}
 	}
@@ -111,6 +111,39 @@ public:
 		}
 
 		return matrix_res;
+	}
+
+	T Min_matrix()
+	{
+		T min = matrix[0][0];
+
+		for (int i{ 0 }; i < row; i++)
+		{
+			for (int j{ 0 }; j < col; j++)
+			{
+				if (matrix[i][j] < min)
+				{
+					min = matrix[i][j];
+				}
+			}
+		}
+		return min;
+	}
+	T Max_matrix()
+	{
+		T max = matrix[0][0];
+
+		for (int i{ 0 }; i < row; i++)
+		{
+			for (int j{ 0 }; j < col; j++)
+			{
+				if (matrix[i][j] > max)
+				{
+					max = matrix[i][j];
+				}
+			}
+		}
+		return max;
 	}
 
 	~Matrix()

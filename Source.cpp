@@ -15,12 +15,15 @@ int main()
 	cout << "Матрица 1\n" << matrix;
 
 	matrix2.rand_matrix();
-	cout << "Матрица 1\n" << matrix2;
+	cout << "Матрица 2\n" << matrix2;
 	
 	cout << "Сумма матриц\n" << matrix + matrix2;
 	cout << "Разница матриц\n" << matrix - matrix2;
 	cout << "Произведение матриц\n" << matrix * matrix2;
 	cout << "Частное матриц\n" << matrix / matrix2;
+
+	cout << "Минимальное число во 2 матрице: " << matrix2.Min_matrix() << "\n";
+	cout << "Максимальное число во 2 матрице: " << matrix2.Max_matrix() << "\n";
 
 	return 0;
 }
