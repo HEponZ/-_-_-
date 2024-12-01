@@ -1,6 +1,5 @@
 #include "Matrix.h"
 
-
 int main()
 {
 	setlocale(LC_ALL, "rus");
