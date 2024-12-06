@@ -1,4 +1,6 @@
 #include "Matrix.h"
+#include "Functions.cpp"
+#include "Functions.inl"
 
 int main()
 {

@@ -28,8 +28,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Matrix.inl">
-      <Filter>Исходные файлы</Filter>
+    <None Include="Functions.inl">
+      <Filter>Файлы заголовков</Filter>
     </None>
   </ItemGroup>
 </Project>
